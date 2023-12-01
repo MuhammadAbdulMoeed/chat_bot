@@ -2,7 +2,6 @@
     "name": "chat_bot",
     "private": true,
     "type": "module",
-    // "proxy": "https://chatbot.cyberasol.com",
     "scripts": {
         "dev": "vite",
         "build": "vite build"
