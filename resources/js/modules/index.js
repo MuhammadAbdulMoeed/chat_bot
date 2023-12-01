@@ -1,0 +1,9 @@
+export { default as Dashboard } from "./dashboard/Dashboard.jsx";
+export { default as Setting } from "./settings/Setting.jsx";
+export { default as Feedback } from "./settings/feedBack/Feedback.jsx";
+export { default as Account } from "./settings/account/Account.jsx";
+export { default as Credits } from "./settings/credits/Credits.jsx";
+export { default as Signup } from "./auth/signUp/Signup.jsx";
+export { default as Signin } from "./auth/signIn/Signin.jsx";
+export { default as Forget } from "./auth/forgetPassword/Forget.jsx";
+export { default as Setp } from "./auth/forgetPassword/setPassword/Setp.jsx";

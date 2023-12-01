@@ -1,0 +1,27 @@
+@import '../../../Sass/mixin';
+@import '../../../Sass/variables';
+
+
+.feedback {
+    padding: 2rem 0rem;
+    border-radius: 26px;
+    background: white;
+    &_content {
+      height: 130px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      p {
+        color: $black;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 140%; /* 19.6px */
+        letter-spacing: 0.7px;
+        text-transform: uppercase;
+      }
+    }
+  }

@@ -1,0 +1,64 @@
+@import "../../Sass/mixin";
+@import "../../Sass/variables";
+
+.wrap_content {
+  background-image: url("../../assets/BgImg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.dashboard_container {
+  width: 970px;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  // background-color: red;
+  @include respond(tab-land) {
+    width: 800px;
+  }
+  @include respond(tab-port) {
+    justify-content: center;
+    width: 100%;
+    // background-color: yellow;
+  }
+
+  &_content {
+    &_left {
+      padding: 1rem 0rem;
+      // background-color: aqua;
+      @include respond(tab-port) {
+        display: none;
+      }
+      img {
+        width: 44.69rem;
+        height: 52.13rem;
+      }
+    }
+    &_right {
+      // background-color: aqua;
+      &_chatbox {
+        width: 45rem;
+        height: 60rem;
+        padding: 2rem 0rem;
+        border-radius: 50px;
+        border: 1px solid $lightblue;
+        background: rgba(255, 255, 255, 0.25);
+        // background-color: red;
+        @include respond(tab-port) {
+          width: 60rem;
+          height: 98vh;
+          padding: 0rem;
+        }
+        @include respond(phone) {
+          width: 100%;
+          border: none;
+          height: 95vh;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+}

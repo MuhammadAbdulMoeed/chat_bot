@@ -1,0 +1,12 @@
+@import '../../../Sass/mixin';
+@import '../../../Sass/variables';
+
+
+.credits_container{
+    padding: 1rem 0rem;
+    &_content{
+        p{
+            font-size: 1.5rem;
+        }
+    }
+}

@@ -1,0 +1,131 @@
+@import "../../../Sass/mixin";
+@import "../../../Sass/variables";
+
+.signup_container {
+  height: 100vh;
+  // padding: 4rem 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  //   background-color: aqua;
+  background-image: url("../../../assets/BgImg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  h1 {
+    color: $black;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 3.5rem;
+    font-weight: 700;
+    cursor: pointer;
+    span {
+      font-weight: 400;
+    }
+  }
+  &_content {
+    // padding: 4rem 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & > *:not(:first-child) {
+      margin-top: 2rem;
+    }
+    h1 {
+      color: rgb(65, 64, 64);
+      text-align: center;
+      font-family: Poppins;
+      font-size: 3rem;
+      font-weight: 700;
+    }
+
+    &_innercontent {
+      width: 50rem;
+      padding: 2rem 2rem;
+      border-radius: 0.8rem;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      //   background-color: lightcoral;
+      @include respond(phone) {
+        width: 40rem;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        padding-top: 30px !important;
+      }
+      .form_label {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.5rem;
+        line-height: 29px;
+        text-transform: capitalize;
+        color: #2b4465;
+       
+        padding-left: 5px;
+      }
+
+  
+      input {
+        width: 100%;
+        padding: 0.9rem 0.9rem;
+        margin-bottom: 19px;
+        background: rgba(249, 249, 249, 0.8);
+        border: 1.20938px solid #eeeeee;
+        border-radius: 4.8375px;
+        color: #2b4465;
+  
+        &::placeholder {
+          color: #aaa;
+        }
+  
+        &:focus {
+          outline: none;
+          border: none;
+          box-shadow: 2px 2px 10px rgb(186, 185, 185);
+          // border-color: #007bff;
+        }
+      }
+  
+      .error {
+        color: #d9534f;
+        font-size: 14px;
+        margin-top: -20px;
+        padding-left: 5px;
+     
+     
+      }
+      &_btn {
+        width: 100%;
+        padding: 1rem;
+        margin-top: 1.5rem;
+        border-radius: 3rem;
+        border: none;
+        background-color: $lightblue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        h1 {
+          color: white;
+          font-size: 2rem;
+        }
+        & > *:not(:first-child) {
+          margin-left: 1rem;
+          color: white;
+          font-size: 2rem;
+        }
+      }
+      p {
+        color: $black;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 500;
+        margin-top: 2rem;
+      }
+    }
+  }
+}

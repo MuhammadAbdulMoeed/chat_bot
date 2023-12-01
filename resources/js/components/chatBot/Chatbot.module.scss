@@ -1,0 +1,147 @@
+@import "../../Sass/mixin";
+@import "../../Sass/variables";
+
+.chatbot_container {
+  width: 80%;
+  height: 47rem;
+  margin: auto;
+  padding: 1rem 0rem;
+  margin-top: 1.5rem;
+  position: relative;
+  // background-color: lightcoral;
+  @include respond(tab-port) {
+    height: auto;
+  }
+  &_content {
+    height: 102%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    // background-color: rgb(34, 34, 18);
+    @include respond(tab-port) {
+      height: 80vh;
+      // height: 75vh;
+    }
+
+    &_innercontent {
+      display: flex;
+      flex-direction: column;
+      overflow-y: auto;
+      // background-color: yellow;
+      padding: 0.7rem;
+      &_sender {
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        height: auto;
+        // background-color: red;
+        margin-top: 2rem;
+      }
+    }
+    &_inputBox {
+      &_content {
+        padding: 1rem 0rem;
+        position: relative;
+        // background-color:gold;
+        textarea {
+          width: 100%;
+          height: 90px;
+          padding: 1rem;
+          border-radius: 0.8rem;
+          background: #fff;
+          outline: none;
+          border: none;
+          resize: none;
+
+          &::placeholder {
+            color: #545454;
+            font-family: Poppins;
+            font-size: 1.2rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%; /* 18px */
+            letter-spacing: 0.6px;
+          }
+        }
+        img {
+          position: absolute;
+          bottom: 15%;
+          right: 2%;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.receiver {
+  display: flex;
+  margin-top: 2rem;
+  // background-color: red;
+  & > *:not(:first-child) {
+    margin-left: 0.5rem;
+  }
+  &_content {
+    width: 280px;
+    padding: 1.5rem;
+    border-radius: 8px;
+    background: rgba(60, 166, 255, 0.25);
+
+    p {
+      color: $black;
+      font-family: Poppins;
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%; /* 15px */
+      letter-spacing: 0.5px;
+      word-break: break-all;
+    }
+  }
+  img {
+    cursor: pointer;
+  }
+  div {
+    span {
+      color: $blue;
+      font-size: 2.5rem;
+      cursor: pointer;
+    }
+  }
+}
+.sender {
+  // margin: 3rem 0rem;
+  width: 280px;
+  padding: 1.5rem;
+  border-radius: 8px;
+  background: rgba(128, 128, 128, 0.25);
+
+  p {
+    color: $black;
+    font-family: Poppins;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 15px */
+    letter-spacing: 0.5px;
+    word-break: break-all;
+  }
+}
+.loading_container {
+  width: 30%;
+  margin-top: 2rem;
+  padding: 1.5rem;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  background: rgba(60, 166, 255, 0.25);
+  & > *:not(:first-child) {
+    margin-left: 1rem;
+  }
+  img {
+    width: 1.5rem;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+}

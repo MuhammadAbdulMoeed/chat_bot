@@ -1,0 +1,45 @@
+{
+    "name": "chat_bot",
+    "private": true,
+    "type": "module",
+    // "proxy": "https://chatbot.cyberasol.com",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build"
+    },
+    "devDependencies": {
+        "@vitejs/plugin-react": "^4.2.0",
+        "axios": "^1.6.1",
+        "laravel-vite-plugin": "^0.8.0",
+        "vite": "^4.0.0",
+        "@types/react": "^18.2.15",
+        "@types/react-dom": "^18.2.7",
+        "@vitejs/plugin-react-swc": "^3.3.2",
+        "eslint": "^8.45.0",
+        "eslint-plugin-react": "^7.32.2",
+        "eslint-plugin-react-hooks": "^4.6.0",
+        "eslint-plugin-react-refresh": "^0.4.3",
+        "vite-plugin-proxy": "^0.5.0"
+      
+    },
+    "dependencies": {
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "react-router-dom": "^6.20.0",
+        "@emotion/react": "^11.11.1",
+        "@emotion/styled": "^11.11.0",
+        "@mui/icons-material": "^5.14.9",
+        "@mui/material": "^5.14.9",
+        "antd": "^5.9.2",
+        "cors": "^2.8.5",
+        "formik": "^2.4.5",
+        "react-audio-player": "^0.17.0",
+        "react-bootstrap": "^2.8.0",
+        "react-icons": "^4.11.0",
+        "react-speech": "^1.0.2",
+        "react-toastify": "^9.1.3",
+        "sass": "^1.67.0",
+        "yup": "^1.2.0"
+        
+    }
+}

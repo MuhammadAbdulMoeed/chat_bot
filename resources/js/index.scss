@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import "./Sass/_mixin.scss";
+@import "./Sass/variables";
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins';
+}
+
+html {
+  // This defines what 1rem is
+  font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+  @include respond(tab-port) {
+    // width < 900?
+    font-size: 50%; //1 rem = 8px, 8/16 = 50%
+  }
+  @include respond(tab-land) {
+    // width < 1200?
+    font-size: 52.25%; //1 rem = 9px, 9/16 = 50%
+  }
+  @include respond(big-desktop) {
+    font-size: 60%; //1rem = 12, 12/16
+  }
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 2px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 1000rem;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $lightblue;
+  border-radius: 1000rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $lightblue;
+}
+
+// Link{
+//   text-decoration: none;
+// }

@@ -1,0 +1,80 @@
+@import "../../Sass/mixin";
+@import "../../Sass/variables";
+
+.setting_container {
+  margin-top: 2rem;
+  padding: 2rem 0rem;
+  //   background-color: lavender;
+  &_content {
+    width: 80%;
+    margin: auto;
+    padding: 1rem 0rem;
+    // background-color: papayawhip;
+    &_top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      h1 {
+        color: $blue;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 2.5rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 140%; /* 35px */
+        letter-spacing: 1.25px;
+        text-transform: uppercase;
+      }
+      button {
+        width: 124.191px;
+        height: 35.821px;
+        flex-shrink: 0;
+        border-radius: 9px;
+        background: #f00;
+        color: white;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 140%; /* 21px */
+        letter-spacing: 0.75px;
+        text-transform: uppercase;
+        border: none;
+        cursor: pointer;
+      }
+    }
+    &_middle {
+      padding: 2rem 0rem;
+      margin-top: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      & > *:not(:first-child) {
+        margin-left: 2rem;
+      }
+      &_items {
+        img {
+          width: 80px;
+          height: 75px;
+          cursor: pointer;
+        }
+        p {
+          color: $blue;
+          text-align: center;
+          font-family: Poppins;
+          font-size: 1.2rem;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 140%; /* 21px */
+          letter-spacing: 0.75px;
+          text-transform: uppercase;
+          cursor: pointer;
+        }
+      }
+    }
+    &_bottom {
+      margin-top: 2rem;
+    }
+  }
+}

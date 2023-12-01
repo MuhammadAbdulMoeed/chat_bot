@@ -1,0 +1,32 @@
+@import "../../../Sass/mixin";
+@import "../../../Sass/variables";
+
+.account_container {
+  padding: 1rem 0rem;
+  // background-color: red;
+  p {
+    font-size: 1.5rem;
+  }
+  &_content {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    & > *:not(:first-child) {
+      margin-left: 2rem;
+    }
+    button {
+      padding: 1rem 2rem;
+      border-radius: 3rem;
+      border: none;
+      color: white;
+      font-size: 1.5rem;
+      font-weight: bold;
+      cursor: pointer;
+      background-color: $lightblue;
+    }
+  }
+}
+
+.logoutbtn{
+  background-color: red !important;
+}
